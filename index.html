@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diarios Online</title>
+<link rel="stylesheet" type="text/css" href="stylesD.css">
+<style>
+    body {
+            font-family: Arial, sans-serif; margin: 0;padding: 20px;background-color: orange;
+        }
+    h1 {
+            text-align: center;
+        }
+    #diariocontainer {
+            margin-top: 20px;text-align: center;
+        }
+    #Frame {
+            width: 100%;height: 500px;
+        }
+    #botonesDiarios {
+            margin-top: 20px;text-align: center;
+        }
+    button {
+    padding: 10px 20px;font-size: 16px;color: red;background-color: aqua;
+        }
+</style>
+</head>
+<body>
+    <h1>Diarios Obligado por el profe!!</h1>
+    <div id="diarioContainer">
+    <iframe id="Frame" src="" frameborder="0"></iframe>
+</div>
+    <div id="botonesDiarios">
+    <button onclick="cambiarDiario(-1)">Anterior</button>
+    <button onclick="cambiarDiario(1)">Siguiente</button>
+    <button onclick="agregarDiario()">Agregar</button>
+ </div>
+ <script src="diario.js"></script>
+</body>
+</html>
